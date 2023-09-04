@@ -1,0 +1,356 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9332326680672269) 100%);
+}
+
+
+.title{
+    display:block;
+    align-items: center;
+    color:white;
+}
+
+.divider{
+    width:auto;
+    height:2px;
+    background-color: white;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.titletext2{
+    color:aquamarine;
+}
+.linktohome{
+    font-weight:200;
+}
+
+.datetext{
+    font-weight:200;
+    overflow:hidden;
+    border-right: .15em solid orange;
+    font-size: 1.6rem;
+    width: 0;
+    white-space: nowrap;
+    animation: 
+        typing 1s steps(20, end) forwards,
+        blink .8s infinite;
+
+}
+
+.containertypewriter{
+    display:inline-block;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
+
+.linktohome:before,.linktohome:visited,.linktohome:active,.linktohome{
+    text-decoration: none;
+    color:aqua;
+    background: linear-gradient(#3f8efcff 0 0) no-repeat calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+    transition: .2s var(--t,0s), background-position .1s calc(.3s - var(--t,0s));
+}
+
+.linktohome:hover{
+    --p: 100%;
+    --t: .3s;
+    color: #fff;
+}
+
+.bottomsection{
+    color:white;
+}
+
+.footertext{
+    color:white;
+}
+
+.space{
+    height:10px;
+}
+
+.space2{
+    height:0.1px;
+}
+.fielddesc{
+    margin-right:0;
+}
+
+
+@media screen and (min-width:500px) {
+    .fielddesc{
+        margin-right:20vw;
+    }
+}
+
+
+@media screen and (max-width:600px)  {
+    .titletext{
+        font-size:5vw;
+    }
+    .datetext,.linktohome{
+        font-size:4vw;
+    }
+    .wrapper{
+        margin-left:2.5rem;
+        margin-top:2rem;
+        margin-right:2.5rem;
+    }
+
+
+    .field{
+        display:block; 
+    }
+    
+    .right{
+        margin-top:10px;
+        margin-right:10px;
+    }
+
+
+    .fieldinfo{
+        display:flex;
+        padding:12px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius:10px;
+        align-items: center;
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .featuredfieldinfo{
+        display:flex;
+        padding:12px;
+        background-color: rgba(240, 14, 146, 0.814);
+        border-radius:10px;
+        align-items: center;
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .fieldicon{
+        width:20px;
+        height:20px;
+    }
+
+    .fielddesc{
+        font-weight:400;
+        padding-bottom:10px;
+        font-size:16px;
+        max-width:190px;
+    }
+    
+    .footertext{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 14px;
+        font-weight:200;
+        color:rgba(251, 248, 248, 0.546);
+    }
+
+    .spcprojectlink{
+        margin-right:5px;
+        background-color: rgba(20, 19, 19, 0.35);
+        width:40px;
+        height:40px;
+        border-radius:9px;
+        border:transparent;
+        transition: all .5s ease;
+        opacity:255;
+    }
+
+    
+
+    .spcprojectlink:hover,.projectlink:hover{
+        opacity:1 0;
+        width:50px;
+        height:50px;
+    }
+    
+    .projectlink{
+        margin-right:5px;
+        background-color: rgba(0, 0, 0, 0.265);
+        width:40px;
+        height:40px;
+        border-radius:9px;
+        border:transparent;
+        transition: all .5s ease;
+        opacity:255;
+    }
+
+    .svg{
+        width:30px;
+        height:30px;
+        fill:white;
+    }
+
+}   
+
+@media screen and (min-width:600px)  {
+    .titletext{
+        font-size:30px;
+    }
+
+    .datetext,.linktohome{
+        font-size:20px;
+    }
+
+    .content{
+        display:flex; 
+    }
+    
+    .wrapper{
+        margin-left:2.5rem;
+        margin-top:2rem;
+        margin-right:2.5rem;
+    }
+
+
+    .right{
+        margin-top:10px;
+        margin-right:10px;
+    }
+
+    
+    .footertext{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 14px;
+        font-weight:200;
+        color:rgba(251, 248, 248, 0.546);
+    }
+    
+    .field{
+        display:block; 
+    }
+
+    .fielddesc{
+        margin-right:200px;
+    }
+
+    .fieldinfo{
+        display:flex;
+        padding:12px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius:10px;
+        align-items: center;
+        flex-direction: row; 
+        justify-content: space-between;
+        width:80vw;
+    }
+
+    .featuredfieldinfo{
+        display:flex;
+        padding:12px;
+        background-color: rgba(240, 14, 146, 0.814);
+        border-radius:10px;
+        align-items: center;
+        flex-direction: row; 
+        justify-content: space-between;
+        width:80vw;
+    }
+
+    .fieldicon{
+        width:20px;
+        height:20px;
+    }
+
+    .fielddesc{
+        font-weight:400;
+        padding-bottom:10px;
+        font-size:18px;
+        max-width:220px;
+    }
+    
+    .footertext{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 14px;
+        font-weight:200;
+        color:rgba(251, 248, 248, 0.546);
+    }
+
+    .spcprojectlink{
+        margin-right:5px;
+        background-color: rgba(20, 19, 19, 0.35);
+        width:40px;
+        height:40px;
+        border-radius:9px;
+        border:transparent;
+        transition: all .5s ease;
+        opacity:255;
+    }
+
+    
+
+    .spcprojectlink:hover,.projectlink:hover{
+        opacity:1 0;
+        width:50px;
+        height:50px;
+    }
+    
+    .projectlink{
+        margin-right:5px;
+        background-color: rgba(0, 0, 0, 0.265);
+        width:40px;
+        height:40px;
+        border-radius:9px;
+        border:transparent;
+        transition: all .5s ease;
+        opacity:255;
+    }
+
+    .svg{
+        width:30px;
+        height:30px;
+        fill:white;
+    }
+
+}
+
+@media screen and (min-width:1000px)  {
+    .titletext{
+        font-size:30px;
+    }
+
+    .datetext,.linktohome{
+        font-size:20px;
+    }
+
+    .wrapper{
+        margin-top:3rem;
+        margin-right:20rem;
+    }
+    .content{
+        display:flex; 
+    }
+    
+    .fieldinfo,.featuredfieldinfo{
+        width:70vw;
+    }
+    .fielddesc{
+        width:auto;
+        min-width:250px;
+        font-size:19px;
+        margin-right:37vw;
+    }
+
+
+    
+}
+
