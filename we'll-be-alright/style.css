@@ -26,6 +26,15 @@ body{
     margin-bottom:20px;
 }
 
+.linktoprojects,.linktoprojects:before,.linktoprojects:active,.linktoprojects:visited{
+    color:white;
+    text-decoration: none;
+}
+.linktoprojects:hover{
+    text-decoration: underline;
+}
+
+
 .info{
     max-width:400px;
 }

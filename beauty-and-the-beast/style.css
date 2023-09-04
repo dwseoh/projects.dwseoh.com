@@ -10,6 +10,13 @@ body{
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9332326680672269) 100%);
 }
 
+.linktoprojects,.linktoprojects:before,.linktoprojects:active,.linktoprojects:visited{
+    color:white;
+    text-decoration: none;
+}
+.linktoprojects:hover{
+    text-decoration: underline;
+}
 
 .title{
     display:block;
