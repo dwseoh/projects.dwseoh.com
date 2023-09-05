@@ -1,0 +1,320 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9332326680672269) 100%);
+}
+
+.iframe1{
+    width:auto;
+    aspect-ratio: 480/360;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.title{
+    display:block;
+    align-items: center;
+  
+    color:white;
+}
+
+.divider,.divider2{
+    width:auto;
+    height:2px;
+    background-color: white;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.turbowarplink,.turbowarplink:before,.turbowarplink:active,.turbowarplink:visited,.turbowarplink:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.audio{
+    display:flex;
+    justify-content: center;
+}
+
+.linktoprojects,.linktoprojects:before,.linktoprojects:active,.linktoprojects:visited{
+    color:white;
+    text-decoration: none;
+}
+.linktoprojects:hover{
+    text-decoration: underline;
+}
+
+.butn{
+    margin-top:5px;
+    display:flex;
+    justify-content: center;
+}
+
+.turbowarplink{
+    transition: all .45s ease;
+    opacity:255;
+    font-size:13px;
+}
+.linkbutton{
+    transition: all .5s ease;
+    opacity:255;
+    font-size:13px;
+    border-radius:9px;
+    border:transparent;
+    padding:5px;
+    background-color: rgba(20, 19, 19, 0.504);
+    width:120px;
+    height:30px;
+}
+
+.linkbutton:hover{
+    width:144px;
+    height:36px;
+    opacity:10;
+    
+}
+
+.linkbutton:hover .turbowarplink{
+    font-size:15.6px;
+    opacity:10;
+}
+
+.info{
+    max-width:400px;
+}
+.img{
+    aspect-ratio: 1 / 1;
+    border-radius:10px;
+    object-fit: cover
+}
+
+.songicon{
+    aspect-ratio: 1 / 1;
+}
+
+.titletext2{
+    color:aquamarine;
+}
+.linktohome, .datetext{
+    font-weight:200;
+}
+.linktohome:before,.linktohome:visited,.linktohome:active,.linktohome{
+    text-decoration: none;
+    color:aqua;
+    background: linear-gradient(#3f8efcff 0 0) no-repeat calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+    transition: .2s var(--t,0s), background-position .1s calc(.3s - var(--t,0s));
+}
+
+.linktohome:hover{
+    --p: 100%;
+    --t: .3s;
+    color: #fff;
+}
+
+.bottomsection{
+    color:white;
+}
+
+.footertext{
+    color:white;
+}
+
+.song{
+    max-width:330px;
+}
+
+@media screen and (max-width:600px)  {
+    .titletext{
+        font-size:5vw;
+    }
+    .datetext,.linktohome{
+        font-size:4vw;
+    }
+    .wrapper{
+        margin-left:2.5rem;
+        margin-top:2rem;
+        margin-right:2.5rem;
+    }
+    .img{
+        width:200px;
+    }
+
+    .content{
+        display:block; 
+    }
+    
+    .right{
+
+        margin-top:10px;
+    }
+
+    .song{
+        background-color: rgba(255,255,255,0.2);
+        border-radius:10px;
+        padding:12px;
+    }
+
+    .songinfo{
+        display:flex;
+        margin-bottom:2px;
+    }
+
+    .songicon{
+        width:20px;
+        height:20px;
+        margin-right:10px;
+    }
+
+    .songtext{
+        font-weight:400;
+        padding-bottom:10px;
+        font-size:16px;
+    }
+    .info{
+        margin-top:15px;
+    }
+    .infotitle{
+        font-size:20px;
+        font-weight:400;
+        margin-bottom:10px;
+        text-decoration: underline;
+    }
+    .infotitle2{
+        font-size:18px;
+        font-weight:300;
+        margin-bottom:10px;
+        margin-top:30px;
+        color:cadetblue
+    }
+    .explanation{
+        font-size:16px;
+        font-weight:200;
+    }
+
+    .footertext{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 14px;
+        font-weight:200;
+        color:rgba(251, 248, 248, 0.546);
+    }
+
+}   
+
+@media screen and (min-width:600px)  {
+    .titletext{
+        font-size:30px;
+    }
+
+    .datetext,.linktohome{
+        font-size:20px;
+    }
+
+    .content{
+        display:flex; 
+    }
+    
+    .wrapper{
+        margin-left:2.5rem;
+        margin-top:2rem;
+        margin-right:2.5rem;
+    }
+
+    .img{
+        width:300px;
+    }
+
+    .right{
+        padding-left:10px;
+    }
+
+    .song{
+        background-color: rgba(255,255,255,0.2);
+        border-radius:10px;
+        padding:12px;
+    }
+
+    .songinfo{
+        display:flex;
+        margin-bottom:2px;
+    }
+
+    .songicon{
+        width:20px;
+        height:20px;
+        margin-right:10px;
+    }
+
+    .songtext{
+        font-weight:400;
+        padding-bottom:10px;
+        font-size:16px;
+    }
+    .info{
+        margin-top:20px;
+    }
+    .infotitle{
+        font-size:20px;
+        font-weight:400;
+        margin-bottom:10px;
+        text-decoration: underline;
+    }
+
+    .infotitle2{
+        font-size:18px;
+        font-weight:300;
+        margin-bottom:10px;
+        margin-top:30px;
+        color:cadetblue
+    }
+
+    .explanation{
+        font-size:16px;
+        font-weight:200;
+    }
+
+    .footertext{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 14px;
+        font-weight:200;
+        color:rgba(251, 248, 248, 0.546);
+    }
+
+}
+
+@media screen and (min-width:1000px)  {
+    .titletext{
+        font-size:30px;
+    }
+
+    .datetext,.linktohome{
+        font-size:20px;
+    }
+
+    .wrapper{
+        margin-left:3rem;
+        margin-top:3rem;
+        margin-right:20rem;
+    }
+    .content{
+        display:flex; 
+    }
+    
+
+    .img{
+        width:400px;
+    }
+
+    .right{
+        padding-left:25px;
+    }
+    
+}
+
