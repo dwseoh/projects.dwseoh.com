@@ -160,11 +160,7 @@ body{
         height:20px;
     }
 
-    .fieldicon2{
-        width:30px;
-        height:30px;
-        filter: invert(100%) sepia(0%) saturate(1822%) hue-rotate(357deg) brightness(106%) contrast(108%);
-    }
+
 
     .fielddesc{
         font-weight:400;
@@ -288,11 +284,7 @@ body{
         width:20px;
         height:20px;
     }
-    .fieldicon2{
-        width:30px;
-        height:30px;
-        filter: invert(100%) sepia(0%) saturate(1822%) hue-rotate(357deg) brightness(106%) contrast(108%);
-    }
+
 
     .fielddesc{
         font-weight:400;
