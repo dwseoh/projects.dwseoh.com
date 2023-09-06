@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "featured":true,
+        "title":"We'll Be Alright Quintet",
+        "details":"2023-09-02",
+        "type":"music",
+        "source":"https://projects.dwseoh.com/we'll-be-alright"
+    },
+    {
+        "id": 2,
+        "featured":false,
+        "title":"The Ultimate Super Mario Collab",
+        "details":"2023-09-04",
+        "type":"scratch",
+        "source":"https://projects.dwseoh.com/the-ultimate-super-mario-collab"
+    },
+    {
+        "id": 3,
+        "featured":false,
+        "title":"Sparkle Noteblock Arrangement",
+        "details":"2023-09-04",
+        "type":"scratch",
+        "source":"https://projects.dwseoh.com/sparkle/"
+    },
+    {
+        "id": 4,
+        "featured":false,
+        "title":"Pink Panther Quartet",
+        "details":"2023-09-04",
+        "type":"music",
+        "source":"https://projects.dwseoh.com/pink-panther/"
+    },
+    {
+        "id": 5,
+        "featured":false,
+        "title":"Beauty and the Beast Quartet",
+        "details":"2023-09-04",
+        "type":"music",
+        "source":"https://projects.dwseoh.com/beauty-and-the-beast/"
+    },
+    {
+        "id": 6,
+        "featured":false,
+        "title":"Happy Birthday Sextet",
+        "details":"2023-09-04",
+        "type":"music",
+        "source":"https://projects.dwseoh.com/happy-birthday/"
+    },
+    {
+        "id": 7,
+        "featured":false,
+        "title":"O Canada Quartet",
+        "details":"2023-09-02",
+        "type":"music",
+        "source":"https://projects.dwseoh.com/o-canada/"
+    }
+]

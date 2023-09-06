@@ -16,6 +16,15 @@ body{
     color:white;
 }
 
+.show{
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+
 .fieldicon{
     margin-left:6px;
     width:20px;
@@ -54,6 +63,57 @@ body{
         typing 1s steps(20, end) forwards,
         blink .8s infinite;
 
+}
+
+.search-wrapper{
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+
+.search{
+    font-size:16px;
+    padding:3.5px;
+    border-radius:8px;
+    border:transparent;
+    width:89%;
+    height:30px;
+    max-width:625px;
+    font-weight:500;
+}
+
+.mark{
+    color:white;
+    background-color: lightpink;
+}
+
+.labelsearch{
+    font-size:20px;
+    margin-bottom:8px;
+}
+.searchwrap{
+
+    display:flex;
+    align-items: center;
+}
+
+.searchinfo{
+    margin-top:3px;
+    font-weight:200;
+    font-size:16px;
+}
+
+.searchicon{
+    width:11%;
+    height:11%;
+    max-width:40px;
+    max-height:40px;
+    margin-left:10px;
+    filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(95deg) brightness(114%) contrast(106%);
+}
+
+.search:hover{
+    filter:drop-shadow(0 1px 3px rgb(197, 188, 188));
 }
 
 .containertypewriter{
@@ -101,7 +161,9 @@ body{
 .fielddesc{
     margin-right:0;
 }
-
+.fieldinfo{
+    margin-top:12px;
+}
 
 @media screen and (min-width:500px) {
     .fielddesc{
@@ -336,6 +398,12 @@ body{
         height:30px;
         fill:white;
     }
+
+    .search-wrapper{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    
 
 }
 

@@ -15,6 +15,7 @@
 		<link rel="icon" type="image/png" href="assets/logo.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="assets/logo.png" sizes="16x16" />
 		<noscript><link rel="stylesheet" href="style.css" /></noscript>
+        <script src="code.js" defer></script>
 	</head>
 	<body>
     <div class="wrapper">
@@ -32,11 +33,37 @@
         <div class="divider">
         </div>
         <div class="bottomsection">
+
+            <div class="search-wrapper">
+                <p class="labelsearch">Search Projects</p>
+                <div class="searchwrap">
+                    
+                    <input type="search" class="search" placeholder="Type in a keyword.." data-search>
+                    <img class="searchicon" src="assets/search.png" draggable="false">
+                </div>
+                <p class="searchinfo"><i>*Pink indicates that it is a featured project</i></p>
+                <p id="noresults" class="hide"><b>There are no results.</b></p>
+            </div>
+
             <div class="content">
                 
                 <div class="right">
-                    <div class="field">
-                        <div class="featuredfieldinfo">
+                    <div class="field" data-field-container>
+                        <!-- <template data-user-template>
+                            <div class="card">
+                              <div class="header" data-header></div>
+                              <div class="body" data-body></div>
+                            </div>
+                          </template> -->
+                        <template data-project-template>
+                            <div class="fieldinfo" data-field-info>
+                                <img src="#" draggable="false" data-icon>
+                                <p class="fielddesc" data-description></p>
+                                <button class="projectlink" data-button><a href="#" target="_blank" data-link><svg class="svg"><use xlink:href="assets/icons.svg#link"></use></svg></a></button>
+                            </div>
+                        </template>
+                       
+                        <!-- <div class="featuredfieldinfo">
                             <img class="fieldicon" src="assets/music-2-xxl.png" draggable="false">
                             <p class="fielddesc">We'll Be Alright Quintet<br>uploaded at <i>2023-09-02</i></p>
                             <button class="spcprojectlink"><a href="https://projects.dwseoh.com/we'll-be-alright" target="_blank"><svg class="svg"><use xlink:href="assets/icons.svg#link"></use></svg></a></button>
@@ -79,7 +106,7 @@
                             <p class="fielddesc">O Canada Quartet<br>uploaded at <i>2023-09-02</i></p>
                             <button class="projectlink"><a href="https://projects.dwseoh.com/o-canada" target="_blank"><svg class="svg"><use xlink:href="assets/icons.svg#link"></use></svg></a></button>
                         </div>
-                        <div class="space"></div>
+                        <div class="space"></div> -->
                     </div>
                     
                 </div>
