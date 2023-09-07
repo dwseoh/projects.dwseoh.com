@@ -10,18 +10,23 @@ body{
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9332326680672269) 100%);
 }
 
-.iframe1{
-    width:auto;
-    aspect-ratio: 480/360;
-    display:flex;
-    justify-content:flex-start;
-}
-
 .title{
     display:block;
     align-items: center;
   
     color:white;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .divider,.divider2{
