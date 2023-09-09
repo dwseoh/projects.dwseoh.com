@@ -431,10 +431,18 @@ body{
         width:auto;
         min-width:250px;
         font-size:19px;
-        margin-right:37vw;
+        margin-right:35vw;
     }
 
 
     
 }
 
+@media screen and (min-width:1200px) {
+    .fielddesc{
+        width:auto;
+        min-width:250px;
+        font-size:19px;
+        margin-right:40vw;
+    }
+}
