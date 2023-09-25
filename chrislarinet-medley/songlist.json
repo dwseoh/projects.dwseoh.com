@@ -16,6 +16,12 @@
         "artist":"Johnny Marks",
         "order":3,
         "src":"https://cdn.discordapp.com/attachments/916158448876527706/1152791469413896223/rudolph_the_red_nosed_reindeer.wav"
+    },
+    {
+        "title":"Frosty the Snowman",
+        "artist":"Steve Edward Nelson and Walter 'Jack' Rollins",
+        "order":4,
+        "src":"https://cdn.discordapp.com/attachments/916158448876527706/1155674193346707576/Frosty_the_snowman.wav"
     }
     
 ]

@@ -1,6 +1,6 @@
 let currentSong = 1
 let songs=[]
-const songslength = 3
+const songslength = 4
 /* 
 searchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase()
