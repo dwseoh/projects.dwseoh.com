@@ -28,6 +28,12 @@
         "artist":"George Frideric Handel",
         "order":5,
         "src":"https://cdn.discordapp.com/attachments/916158448876527706/1167871826412720168/joy_to_the_world.wav?ex=654fb465&is=653d3f65&hm=37794afd6d817480705d2e0cf29ae4ea5f0fa1f4136fc442faf9e6b91788618f&"
+    },
+    {
+        "title":"Carol Of The Bells",
+        "artist":"Mykola Leontovych",
+        "order":6,
+        "src":"https://cdn.discordapp.com/attachments/916158448876527706/1168342846290538606/carol_of_the_bells.wav?ex=65516b11&is=653ef611&hm=1b732da87da0351b3f21aef8e5663b8791daeb9f2209861d43c92649e638af27&"
     }
     
 ]
