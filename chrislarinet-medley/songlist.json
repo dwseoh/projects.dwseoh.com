@@ -34,6 +34,12 @@
         "artist":"Mykola Leontovych",
         "order":6,
         "src":"https://cdn.discordapp.com/attachments/916158448876527706/1168342846290538606/carol_of_the_bells.wav?ex=65516b11&is=653ef611&hm=1b732da87da0351b3f21aef8e5663b8791daeb9f2209861d43c92649e638af27&"
+    },
+    {
+        "title":"Silent Night",
+        "artist":"Franz Xaver Gruber",
+        "order":7,
+        "src":"https://cdn.discordapp.com/attachments/916158448876527706/1175978238502248469/Untitled_song_3.wav?ex=656d3214&is=655abd14&hm=75052c5d87d1eed5e438f67606d6debfcf19db63bd354d13bff97ba0c20b8791&"
     }
     
 ]
