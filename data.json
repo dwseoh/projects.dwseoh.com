@@ -1,19 +1,19 @@
 [
     {
-        "id": 1,
-        "featured":true,
-        "title":"We'll Be Alright Quintet",
-        "details":"2023-09-02",
-        "type":"music",
-        "source":"https://projects.dwseoh.com/we'll-be-alright"
-    },
-    {
         "id": 8,
         "featured":true,
         "title":"Chrislarinet Medley",
         "details":"2023-09-06",
         "type":"music",
         "source":"https://projects.dwseoh.com/chrislarinet-medley"
+    },
+    {
+        "id": 1,
+        "featured":false,
+        "title":"We'll Be Alright Quintet",
+        "details":"2023-09-02",
+        "type":"music",
+        "source":"https://projects.dwseoh.com/we'll-be-alright"
     },
     {
         "id": 10,
