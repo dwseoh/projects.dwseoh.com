@@ -37,7 +37,7 @@ searchInput.addEventListener("input", e => {
     const ele = document.getElementById("noresults")
     ele.classList.remove('show')
     ele.classList.add('hide')
-    ele.style.marginTop = ''
+    ele.style.marginTop = none
   }
 
 })
