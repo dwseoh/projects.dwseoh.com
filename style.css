@@ -1,3 +1,21 @@
+/* ============================================================
+   Project Archive homepage (projects.dwseoh.com)
+   ============================================================ */
+
+:root {
+    --c-text: #fff;
+    --c-accent: aquamarine;
+    --c-link: aqua;
+    --c-link-hi: #3f8efcff;
+    --c-footer: rgba(251, 248, 248, 0.546);
+    --accent-orange: orange;
+    --card-bg: rgba(255, 255, 255, 0.2);
+    --card-featured-bg: rgba(240, 14, 146, 0.814);
+    --btn-bg: rgba(0, 0, 0, 0.265);
+    --btn-featured-bg: rgba(20, 19, 19, 0.35);
+    --radius: 10px;
+}
+
 * {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -10,12 +28,7 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9332326680672269) 100%);
 }
 
-.title {
-    display: block;
-    align-items: center;
-    color: white;
-}
-
+/* --- utility --- */
 .show {
     display: block !important;
 }
@@ -24,98 +37,27 @@ body {
     display: none !important;
 }
 
-
-.fieldicon {
-    margin-left: 6px;
-    width: 20px;
-    height: 20px;
-}
-
-.fieldicon2 {
-    width: 30px;
-    height: 30px;
-    filter: invert(100%) sepia(0%) saturate(1822%) hue-rotate(357deg) brightness(106%) contrast(108%);
-}
-
-.divider {
-    width: auto;
-    height: 2px;
-    background-color: white;
-    margin-top: 15px;
-    margin-bottom: 20px;
+/* --- header --- */
+.title {
+    display: block;
+    align-items: center;
+    color: var(--c-text);
 }
 
 .titletext2 {
-    color: aquamarine;
-}
-
-.linktohome {
-    font-weight: 200;
+    color: var(--c-accent);
 }
 
 .datetext {
     font-weight: 200;
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid var(--accent-orange);
     font-size: 1.6rem;
     width: 0;
     white-space: nowrap;
     animation:
         typing 1s steps(20, end) forwards,
         blink .8s infinite;
-
-}
-
-.search-wrapper {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-
-.search {
-    font-size: 16px;
-    padding: 3.5px;
-    border-radius: 8px;
-    border: transparent;
-    width: 89%;
-    height: 30px;
-    max-width: 625px;
-    font-weight: 500;
-}
-
-.mark {
-    color: white;
-    background-color: lightpink;
-}
-
-.labelsearch {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.searchwrap {
-
-    display: flex;
-    align-items: center;
-}
-
-.searchinfo {
-    margin-top: 3px;
-    font-weight: 200;
-    font-size: 16px;
-}
-
-.searchicon {
-    width: 11%;
-    height: 11%;
-    max-width: 40px;
-    max-height: 40px;
-    margin-left: 10px;
-    filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(95deg) brightness(114%) contrast(106%);
-}
-
-.search:hover {
-    filter: drop-shadow(0 1px 3px rgb(197, 188, 188));
 }
 
 .containertypewriter {
@@ -138,32 +80,181 @@ body {
     }
 
     to {
-        border-color: orange;
+        border-color: var(--accent-orange);
     }
 }
 
-.linktohome:before,
+.linktohome,
+.linktohome::before,
 .linktohome:visited,
-.linktohome:active,
-.linktohome {
+.linktohome:active {
     text-decoration: none;
-    color: aqua;
-    background: linear-gradient(#3f8efcff 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, .08em);
+    color: var(--c-link);
+    background: linear-gradient(var(--c-link-hi) 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, .08em);
     transition: .2s var(--t, 0s), background-position .1s calc(.3s - var(--t, 0s));
 }
 
 .linktohome:hover {
     --p: 100%;
     --t: .3s;
-    color: #fff;
+    color: var(--c-text);
 }
 
+.linktohome {
+    font-weight: 200;
+}
+
+.divider {
+    width: auto;
+    height: 2px;
+    background-color: var(--c-text);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* --- search --- */
+.search-wrapper {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.labelsearch {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.searchwrap {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    font-size: 16px;
+    padding: 3.5px;
+    border-radius: 8px;
+    border: transparent;
+    width: 89%;
+    height: 30px;
+    max-width: 625px;
+    font-weight: 500;
+}
+
+.search:hover {
+    filter: drop-shadow(0 1px 3px rgb(197, 188, 188));
+}
+
+.searchicon {
+    width: 11%;
+    height: 11%;
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 10px;
+    filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(95deg) brightness(114%) contrast(106%);
+}
+
+.searchinfo {
+    margin-top: 3px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.mark {
+    color: var(--c-text);
+    background-color: lightpink;
+}
+
+/* --- project cards --- */
 .bottomsection {
-    color: white;
+    color: var(--c-text);
 }
 
+.field {
+    display: block;
+}
+
+.right {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.fieldinfo,
+.featuredfieldinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: var(--radius);
+}
+
+.fieldinfo {
+    margin-top: 12px;
+    background-color: var(--card-bg);
+}
+
+.featuredfieldinfo {
+    background-color: var(--card-featured-bg);
+}
+
+.fieldicon {
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.fieldicon2 {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(1822%) hue-rotate(357deg) brightness(106%) contrast(108%);
+}
+
+.fielddesc {
+    margin-right: 0;
+}
+
+/* card link buttons — identical at every breakpoint */
+.projectlink {
+    margin-right: 5px;
+    background-color: var(--btn-bg);
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    border: transparent;
+    transition: all .5s ease;
+    opacity: 255;
+}
+
+.spcprojectlink {
+    margin-right: 5px;
+    background-color: var(--btn-featured-bg);
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    border: transparent;
+    transition: all .5s ease;
+    opacity: 255;
+}
+
+.spcprojectlink:hover,
+.projectlink:hover {
+    opacity: 1 0;
+    width: 50px;
+    height: 50px;
+}
+
+.svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--c-text);
+}
+
+/* --- footer --- */
 .footertext {
-    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--c-footer);
 }
 
 .space {
@@ -174,22 +265,23 @@ body {
     height: 0.1px;
 }
 
-.fielddesc {
-    margin-right: 0;
+/* --- layout wrapper (overridden at ≥1000px) --- */
+.wrapper {
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
 }
 
-.fieldinfo {
-    margin-top: 12px;
-}
-
-@media screen and (min-width:500px) {
+/* ============================================================
+   Responsive — only the rules that actually change per breakpoint
+   ============================================================ */
+@media screen and (min-width: 500px) {
     .fielddesc {
         margin-right: 20vw;
     }
 }
 
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .titletext {
         font-size: 5vw;
     }
@@ -199,106 +291,15 @@ body {
         font-size: 4vw;
     }
 
-    .wrapper {
-        margin-left: 2.5rem;
-        margin-top: 2rem;
-        margin-right: 2.5rem;
-    }
-
-
-    .field {
-        display: block;
-    }
-
-    .right {
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-
-
-    .fieldinfo {
-        display: flex;
-        padding: 12px;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .featuredfieldinfo {
-        display: flex;
-        padding: 12px;
-        background-color: rgba(240, 14, 146, 0.814);
-        border-radius: 10px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .fieldicon {
-        margin-left: 6px;
-        width: 20px;
-        height: 20px;
-    }
-
-
-
     .fielddesc {
         font-weight: 400;
         padding-bottom: 10px;
         font-size: 16px;
         max-width: 190px;
     }
-
-    .footertext {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 200;
-        color: rgba(251, 248, 248, 0.546);
-    }
-
-    .spcprojectlink {
-        margin-right: 5px;
-        background-color: rgba(20, 19, 19, 0.35);
-        width: 40px;
-        height: 40px;
-        border-radius: 9px;
-        border: transparent;
-        transition: all .5s ease;
-        opacity: 255;
-    }
-
-
-
-    .spcprojectlink:hover,
-    .projectlink:hover {
-        opacity: 1 0;
-        width: 50px;
-        height: 50px;
-    }
-
-    .projectlink {
-        margin-right: 5px;
-        background-color: rgba(0, 0, 0, 0.265);
-        width: 40px;
-        height: 40px;
-        border-radius: 9px;
-        border: transparent;
-        transition: all .5s ease;
-        opacity: 255;
-    }
-
-    .svg {
-        width: 30px;
-        height: 30px;
-        fill: white;
-    }
-
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
     .titletext {
         font-size: 30px;
     }
@@ -310,116 +311,6 @@ body {
 
     .content {
         display: flex;
-    }
-
-    .wrapper {
-        margin-left: 2.5rem;
-        margin-top: 2rem;
-        margin-right: 2.5rem;
-    }
-
-
-    .right {
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-
-
-    .footertext {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 200;
-        color: rgba(251, 248, 248, 0.546);
-    }
-
-    .field {
-        display: block;
-    }
-
-    .fielddesc {
-        margin-right: 200px;
-    }
-
-    .fieldinfo {
-        display: flex;
-        padding: 12px;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 80vw;
-    }
-
-    .featuredfieldinfo {
-        display: flex;
-        padding: 12px;
-        background-color: rgba(240, 14, 146, 0.814);
-        border-radius: 10px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 80vw;
-    }
-
-    .fieldicon {
-        margin-left: 6px;
-        width: 20px;
-        height: 20px;
-    }
-
-
-    .fielddesc {
-        font-weight: 400;
-        padding-bottom: 10px;
-        font-size: 18px;
-        max-width: 250px;
-    }
-
-    .footertext {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 200;
-        color: rgba(251, 248, 248, 0.546);
-    }
-
-    .spcprojectlink {
-        margin-right: 5px;
-        background-color: rgba(20, 19, 19, 0.35);
-        width: 40px;
-        height: 40px;
-        border-radius: 9px;
-        border: transparent;
-        transition: all .5s ease;
-        opacity: 255;
-    }
-
-
-
-    .spcprojectlink:hover,
-    .projectlink:hover {
-        opacity: 1 0;
-        width: 50px;
-        height: 50px;
-    }
-
-    .projectlink {
-        margin-right: 5px;
-        background-color: rgba(0, 0, 0, 0.265);
-        width: 40px;
-        height: 40px;
-        border-radius: 9px;
-        border: transparent;
-        transition: all .5s ease;
-        opacity: 255;
-    }
-
-    .svg {
-        width: 30px;
-        height: 30px;
-        fill: white;
     }
 
     .search-wrapper {
@@ -427,26 +318,24 @@ body {
         margin-bottom: 10px;
     }
 
+    .fieldinfo,
+    .featuredfieldinfo {
+        width: 80vw;
+    }
 
+    .fielddesc {
+        margin-right: 200px;
+        font-weight: 400;
+        padding-bottom: 10px;
+        font-size: 18px;
+        max-width: 250px;
+    }
 }
 
-@media screen and (min-width:1000px) {
-    .titletext {
-        font-size: 30px;
-    }
-
-    .datetext,
-    .linktohome {
-        font-size: 20px;
-    }
-
+@media screen and (min-width: 1000px) {
     .wrapper {
         margin-top: 3rem;
         margin-right: 20rem;
-    }
-
-    .content {
-        display: flex;
     }
 
     .fieldinfo,
@@ -460,12 +349,9 @@ body {
         font-size: 19px;
         margin-right: 35vw;
     }
-
-
-
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .fielddesc {
         width: auto;
         min-width: 250px;
